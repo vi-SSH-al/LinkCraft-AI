@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Post Automator - Result Page</title>
+</head>
+<body>
+    <h1>LinkedIn Post Automator - Result Page</h1>
+
+    <!-- Loop through the number of days to display the generated content for each day -->
+    {% for day in range(1, num_of_days + 1) %}
+    <h2>Generated Content for Day {{ day }}:</h2>
+    <div id="generatedContent{{ day }}"></div>
+
+    <script>
+        // JavaScript code to fetch and display the generated content from the file for each day
+        fetch(`cgi-bin/result_day{{ day }}.txt`)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("generatedContent{{ day }}").textContent = data;
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    </script>
+    {% endfor %}
+</body>
+</html>
