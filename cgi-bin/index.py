@@ -10,10 +10,10 @@ import numpy as np
 
 
 print("Content-type: text/html\n")
-openai.api_key = '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'
-ACCESS_TOKEN = "AQUSCbYSzSr3S8ZoZBJMipHcJ5H3WVAqnF61gV1io3RMIRcUUu2kbJRsd5Vk4i0-eeEx_KfD3_bg30eQYFNdNNy1q_h8WM3bD522_37kDTdcB0sdid0cFi6kOoS8K7ibYYXk0ai0aepCLeLUu6ZeHo7KEi5Nn_vnO9yNVc_Mj55ZY58e7_uCtPUASH1ZBtjhai9nIxgvGT1_ufUpHJoT_PfQRowZ91aKn_4UMELYTQzNCKkCs_--nBjQ1L_z4JkVa_iOu0U_8AXT7yz5CYv-BmMqf9HhcRsPm1ghyNu65xSdOrQrslflqAYiBLg4ofDDyRRon_d4t6ttbgm6VatTkHViYiJfMA"
-# PERSON_URN = "urn:li:person:Nv7Hoz3QEA"
-PERSON_URN = "urn:li:person:iq8nNuBdby"
+openai.api_key = ''
+ACCESS_TOKEN = ""
+# PERSON_URN = ""
+PERSON_URN = ""
 
 
 
